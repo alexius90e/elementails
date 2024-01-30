@@ -1,0 +1,3 @@
+import "./sliders.js";
+import "./accordeon.js";
+import "./custom-select.js";

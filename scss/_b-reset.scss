@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: "Baloo Cyrillic";
+  src: url("../fonts/baloo-cyrillic1.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  color: $black;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant-numeric: lining-nums proportional-nums;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  color: $black;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Baloo Cyrillic", sans-serif;
+}

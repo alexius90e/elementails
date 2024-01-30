@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Baloo Cyrillic";
+  src: url("../fonts/baloo-cyrillic1.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  color: #111111;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant-numeric: lining-nums proportional-nums;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Baloo Cyrillic", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.custom-select {
+  position: relative;
+  margin: 0;
+  width: -moz-min-content;
+  width: min-content;
+  border: none;
+}
+.custom-select select {
+  display: none;
+}
+.custom-select .select-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 170px;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .custom-select .select-selected {
+    gap: 8px;
+    max-width: 130px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.custom-select .select-selected > span {
+  display: inline-block;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 576px) {
+  .custom-select .select-selected > span {
+    max-width: 115px;
+  }
+}
+.custom-select .select-selected::after {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background-image: url(../assets/icons/dropdown.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all ease-in-out 0.1s;
+}
+@media (max-width: 576px) {
+  .custom-select .select-selected::after {
+    height: 14px;
+    width: 14px;
+  }
+}
+.custom-select .select-selected.active {
+  color: #ec1818;
+}
+.custom-select .select-selected.active::after {
+  background-image: url(../assets/icons/dropdown-red.svg);
+  transform: rotate(180deg);
+}
+.custom-select .select-hide {
+  display: none !important;
+}
+.custom-select .select-items {
+  position: absolute;
+  top: calc(100% + 11px);
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 25px 27px;
+  max-height: 288px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  overflow-y: auto;
+  color: #111111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 48px 0px rgba(0, 0, 102, 0.1);
+}
+@media (max-width: 576px) {
+  .custom-select .select-items {
+    gap: 8px;
+    min-width: none;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+.custom-select .select-items::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  background-color: #cccccc;
+}
+.custom-select .select-items::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
+.custom-select .select-items::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
+}
+.custom-select .select-items .same-as-selected {
+  color: #ec1818;
+}
+.custom-select .select-items div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  color: #111111;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  cursor: pointer;
+}
+.custom-select .select-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+}
