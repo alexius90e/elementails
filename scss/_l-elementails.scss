@@ -1,0 +1,226 @@
+.elementails {
+  height: 672px;
+  overflow: hidden;
+
+  @include desktop {
+    height: 529px;
+  }
+
+  @include tablet {
+    height: 844px;
+  }
+
+  @include mobilesm {
+    height: 650px;
+  }
+
+  & .container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding-top: 145px;
+    box-sizing: border-box;
+
+    @include desktop {
+      padding-top: 106px;
+    }
+
+    @include mobile {
+      padding-top: 70px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    color: $white;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 56px;
+    }
+
+    @include mobilesm {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    max-width: 566px;
+    margin: 0;
+    color: $white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163%;
+
+    @include desktop {
+      max-width: 456px;
+    }
+
+    @include tablet {
+      max-width: 343px;
+    }
+
+    @include mobilesm {
+      font-size: 15px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &_energy {
+      left: -120px;
+      bottom: 79px;
+      max-width: 203px;
+
+      @include desktop {
+        left: -28px;
+        bottom: 13px;
+        max-width: 153px;
+      }
+
+      @include laptop {
+        max-width: 145px;
+      }
+
+      @include tablet {
+        left: 14px;
+        bottom: 328px;
+      }
+
+      @include mobilesm {
+        left: -12px;
+        bottom: 212px;
+        max-width: 93px;
+      }
+    }
+
+    &_air {
+      left: 130px;
+      bottom: 62px;
+      max-width: 383px;
+
+      @include desktop {
+        left: 207px;
+        bottom: 35px;
+        max-width: 255px;
+      }
+
+      @include laptop {
+        left: 164px;
+        bottom: 38px;
+        max-width: 268px;
+      }
+
+      @include tablet {
+        left: auto;
+        right: 0;
+        bottom: 353px;
+      }
+
+      @include mobilesm {
+        right: 30px;
+        bottom: 256px;
+        max-width: 182px;
+      }
+    }
+
+    &_fire {
+      right: 160px;
+      bottom: 140px;
+      max-width: 464px;
+
+      @include desktop {
+        right: 186px;
+        bottom: 182px;
+        max-width: 294px;
+      }
+
+      @include laptop {
+        right: 0px;
+        bottom: 194px;
+        max-width: 264px;
+      }
+
+      @include tablet {
+        right: auto;
+        left: 24px;
+        bottom: 58px;
+        max-width: 305px;
+      }
+
+      @include mobilesm {
+        left: 5px;
+        bottom: 22px;
+        max-width: 215px;
+      }
+    }
+
+    &_earth {
+      right: -120px;
+      bottom: 428px;
+      max-width: 353px;
+
+      @include desktop {
+        right: 0px;
+        bottom: 382px;
+        max-width: 206px;
+      }
+
+      @include laptop {
+        right: 0px;
+        bottom: 435px;
+        max-width: 134px;
+      }
+
+      @include tablet {
+        right: -18px;
+        bottom: 237px;
+        max-width: 154px;
+      }
+
+      @include mobilesm {
+        right: 0;
+        bottom: 157px;
+        max-width: 128px;
+      }
+    }
+
+    &_water {
+      right: -120px;
+      bottom: 98px;
+      max-width: 266px;
+
+      @include desktop {
+        right: 0;
+        bottom: 0;
+        max-width: 174px;
+      }
+
+      @include laptop {
+        right: 0;
+        bottom: 25px;
+        max-width: 149px;
+      }
+
+      @include tablet {
+        right: -27px;
+        bottom: 69px;
+      }
+
+      @include mobilesm {
+        right: 4px;
+        bottom: 28px;
+        max-width: 105px;
+      }
+    }
+  }
+}
