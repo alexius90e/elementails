@@ -44,6 +44,23 @@ h6 {
   font-family: "Baloo Cyrillic", sans-serif;
 }
 
+.h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 984px) {
+  .h2 {
+    font-size: 36px;
+    line-height: 111%;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -711,5 +728,42 @@ h6 {
     right: 4px;
     bottom: 28px;
     max-width: 105px;
+  }
+}
+
+.five-elements {
+  padding: 36px 0 48px;
+}
+.five-elements__title {
+  margin: 0;
+}
+@media (max-width: 744px) {
+  .five-elements__title {
+    margin: 0 0 12px;
+  }
+}
+.five-elements__description {
+  margin: 0 0 32px;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+  text-align: center;
+}
+@media (max-width: 464px) {
+  .five-elements__description {
+    font-size: 15px;
+  }
+}
+.five-elements__slider .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  width: 202px;
+  height: auto;
+}
+@media (max-width: 744px) {
+  .five-elements__slider .swiper-slide img {
+    width: 189px;
   }
 }

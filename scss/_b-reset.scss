@@ -46,3 +46,19 @@ h5,
 h6 {
   font-family: "Baloo Cyrillic", sans-serif;
 }
+
+.h2 {
+  margin: 0;
+  color: $white;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include laptop {
+    font-size: 36px;
+    line-height: 111%;
+  }
+}
