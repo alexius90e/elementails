@@ -1,0 +1,26 @@
+.accordeon {
+  padding: 24px 16px;
+
+  &__toggler {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+      content: "+";
+    }
+  }
+
+  &.active &__toggler {
+    &::after {
+      content: '-';
+    }
+  }
+
+  &__panel {
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: max-height ease-in-out 0.2s;
+  }
+}
