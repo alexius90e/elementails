@@ -767,3 +767,248 @@ h6 {
     width: 189px;
   }
 }
+
+.roadmap {
+  padding: 64px 0;
+}
+@media (max-width: 744px) {
+  .roadmap {
+    padding: 48px 0 64px;
+  }
+}
+.roadmap__title {
+  margin: 0 0 24px;
+}
+.roadmap__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  margin: 0 0 64px;
+  padding-bottom: 18px;
+  overflow: auto;
+}
+@media (max-width: 984px) {
+  .roadmap__nav {
+    justify-content: flex-start;
+    margin: 0 0 24px;
+  }
+}
+@media (max-width: 464px) {
+  .roadmap__nav {
+    gap: 32px;
+  }
+}
+.roadmap__nav-button {
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Baloo Cyrillic";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.roadmap__nav-button.active::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.roadmap__nav-button.disabled {
+  opacity: 0.3;
+}
+.roadmap__nav-button.disabled::after {
+  content: "";
+  height: 22px;
+  width: 22px;
+  background: url(../assets/lock.svg) center no-repeat;
+  background-size: 16px;
+}
+.roadmap__stage-one {
+  position: relative;
+}
+.roadmap__stage-one-slide {
+  display: flex;
+  gap: 48px;
+}
+@media (max-width: 1248px) {
+  .roadmap__stage-one-slide {
+    gap: 32px;
+  }
+}
+@media (max-width: 984px) {
+  .roadmap__stage-one-slide {
+    align-items: center;
+  }
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one-slide {
+    display: block;
+  }
+}
+.roadmap__stage-one-slide-figure {
+  flex: 0 0 472px;
+}
+@media (max-width: 1248px) {
+  .roadmap__stage-one-slide-figure {
+    flex: 0 0 380px;
+  }
+}
+@media (max-width: 984px) {
+  .roadmap__stage-one-slide-figure {
+    flex: 0 0 320px;
+  }
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one-slide-figure {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 52px;
+  }
+}
+.roadmap__stage-one-slide-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one-slide-figure img {
+    height: 450px;
+  }
+}
+@media (max-width: 464px) {
+  .roadmap__stage-one-slide-figure img {
+    height: 300px;
+  }
+}
+.roadmap__stage-one-slide-content {
+  padding: 24px 0;
+  padding-right: 56px;
+}
+@media (max-width: 1248px) {
+  .roadmap__stage-one-slide-content {
+    padding-right: 24px;
+  }
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one-slide-content {
+    padding-right: 0;
+  }
+}
+.roadmap__stage-one-slide-title {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+@media (max-width: 984px) {
+  .roadmap__stage-one-slide-title {
+    font-size: 28px;
+  }
+}
+.roadmap__stage-one-slide-text {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+}
+@media (max-width: 464px) {
+  .roadmap__stage-one-slide-text {
+    font-size: 15px;
+  }
+}
+.roadmap__stage-one-slide-text:last-child {
+  margin-bottom: 0;
+}
+.roadmap__stage-one-controls {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 984px) {
+  .roadmap__stage-one-controls {
+    position: static;
+    margin-top: 48px;
+  }
+}
+@media (max-width: 464px) {
+  .roadmap__stage-one-controls {
+    justify-content: space-between;
+  }
+}
+.roadmap__stage-one .swiper-button-next, .roadmap__stage-one .swiper-button-prev {
+  position: static;
+  width: 80px;
+  height: 56px;
+  background: url(../assets/arrow-next.png) center no-repeat;
+  transform: none;
+}
+.roadmap__stage-one .swiper-button-next:after, .roadmap__stage-one .swiper-button-prev:after {
+  display: none;
+}
+.roadmap__stage-one .swiper-button-prev {
+  transform: rotate(180deg);
+}
+.roadmap__stage-one .swiper-pagination {
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  width: 4px !important;
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one .swiper-pagination {
+    top: 476px !important;
+    flex-direction: row;
+    height: 4px;
+    width: 100% !important;
+  }
+}
+@media (max-width: 464px) {
+  .roadmap__stage-one .swiper-pagination {
+    top: 326px !important;
+  }
+}
+.roadmap__stage-one .swiper-pagination-bullet {
+  display: block;
+  width: 4px;
+  height: 62px;
+  margin: 0 !important;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+@media (max-width: 744px) {
+  .roadmap__stage-one .swiper-pagination-bullet {
+    max-width: 62px;
+    width: 100%;
+    height: 4px;
+  }
+}

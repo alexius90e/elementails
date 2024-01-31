@@ -1,26 +1,3 @@
-const mainSwiper = new Swiper(".main-slider .swiper", {
-  spaceBetween: 40,
-  centeredSlides: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    1480: {
-      slidesPerView: 1.25,
-    },
-    1600: {
-      slidesPerView: 1.5,
-    },
-  },
-  navigation: {
-    nextEl: ".main-slider .swiper-button-next",
-    prevEl: ".main-slider .swiper-button-prev",
-  },
-  pagination: {
-    el: ".main-slider .swiper-pagination",
-  },
-});
-
 const fiveElementsSwiper = new Swiper(".five-elements .swiper", {
   spaceBetween: 24,
   breakpoints: {
@@ -36,5 +13,16 @@ const fiveElementsSwiper = new Swiper(".five-elements .swiper", {
     744: {
       slidesPerView: 5,
     },
+  },
+});
+
+const stageOneSwiper = new Swiper(".roadmap__stage-one .swiper", {
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".roadmap__stage-one .swiper-button-next",
+    prevEl: ".roadmap__stage-one .swiper-button-prev",
+  },
+  pagination: {
+    el: ".roadmap__stage-one .swiper-pagination",
   },
 });
