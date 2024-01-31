@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 @font-face {
   font-family: "Baloo Cyrillic";
@@ -20,7 +20,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: $white;
+  background: url(../assets/background.jpg) top center repeat-x,
+    linear-gradient(180deg, #435ba1 0%, #435ba1 1251px, #334aaa 100%) no-repeat;
   color: $black;
 }
 
@@ -37,7 +38,11 @@ figure {
   margin: 0;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Baloo Cyrillic", sans-serif;
 }
