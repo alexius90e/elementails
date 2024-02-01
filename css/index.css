@@ -21,6 +21,11 @@ body {
   background: url(../assets/background.jpg) top center repeat-x, linear-gradient(180deg, #435ba1 0%, #435ba1 1251px, #334aaa 100%) no-repeat;
   color: #111111;
 }
+@media screen and (max-width: 1520px) {
+  body {
+    background-size: 1520px;
+  }
+}
 
 * {
   font-family: "Rubik", sans-serif;

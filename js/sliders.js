@@ -18,6 +18,7 @@ const fiveElementsSwiper = new Swiper(".five-elements .swiper", {
 
 const stageOneSwiper = new Swiper(".roadmap__stage-one .swiper", {
   spaceBetween: 40,
+  autoHeight: true,
   navigation: {
     nextEl: ".roadmap__stage-one .swiper-button-next",
     prevEl: ".roadmap__stage-one .swiper-button-prev",
