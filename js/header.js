@@ -1,9 +1,10 @@
 const headerNav = document.querySelector(".header__nav");
-const headeBurgerButton = document.querySelector('.header__burger-button')
+const headeBurgerButton = document.querySelector(".header__burger-button");
 
 if (headerNav) {
   headerNav.addEventListener("click", (event) => {
-    if (event.target.classList.contains("close")) event.currentTarget.classList.remove("active");
+    const isCloseElem = event.target.classList.contains("close");
+    if (isCloseElem) event.currentTarget.classList.remove("active");
   });
 }
 
