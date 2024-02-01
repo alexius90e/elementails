@@ -759,7 +759,7 @@ h6 {
 }
 @media (max-width: 464px) {
   .elementails__image_water {
-    right: 4px;
+    right: 0;
     bottom: 28px;
     max-width: 105px;
   }
