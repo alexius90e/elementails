@@ -1130,3 +1130,131 @@ h6 {
     padding: 24px 40px 0 64px;
   }
 }
+
+.contacts {
+  padding: 48px 0;
+}
+@media (max-width: 1248px) {
+  .contacts {
+    padding: 0 0 80px;
+  }
+}
+.contacts__content {
+  max-width: 784px;
+  margin: 0 auto;
+  padding: 64px;
+  box-sizing: border-box;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.07);
+}
+@media (max-width: 1248px) {
+  .contacts__content {
+    padding: 64px 60px;
+  }
+}
+@media (max-width: 984px) {
+  .contacts__content {
+    padding: 64px 45px;
+  }
+}
+@media (max-width: 744px) {
+  .contacts__content {
+    padding: 64px 24px;
+  }
+}
+.contacts__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 40px;
+}
+.contacts__icon img {
+  display: block;
+  max-width: 100%;
+  width: 72px;
+  height: auto;
+}
+.contacts__title {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-family: "Baloo Cyrillic";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contacts__description {
+  margin: 0 0 40px;
+  color: #ffffff;
+  font-family: "Baloo Cyrillic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 464px) {
+  .contacts__description {
+    font-size: 15px;
+    line-height: 140%;
+  }
+}
+.contacts__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+@media (max-width: 576px) {
+  .contacts__links {
+    flex-direction: column;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 218px;
+  padding: 11px 23px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.15s;
+}
+.contacts__link::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+.contacts__link_channel {
+  color: #334aab;
+  background-color: #ffffff;
+}
+.contacts__link_channel:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.contacts__link_channel::after {
+  background-image: url(../assets/arrow-right.svg);
+}
+.contacts__link_chat {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0);
+}
+.contacts__link_chat:hover {
+  border-color: white;
+}
+.contacts__link_chat::after {
+  background-image: url(../assets/arrow-up-right.svg);
+}

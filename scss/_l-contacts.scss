@@ -1,0 +1,137 @@
+.contacts {
+  padding: 48px 0;
+
+  @include desktop {
+    padding: 0 0 80px;
+  }
+
+  &__content {
+    max-width: 784px;
+    margin: 0 auto;
+    padding: 64px;
+    box-sizing: border-box;
+    border-radius: 36px;
+    background: rgba($color: $white, $alpha: 0.07);
+
+    @include desktop {
+      padding: 64px 60px;
+    }
+
+    @include laptop {
+      padding: 64px 45px;
+    }
+
+    @include tablet {
+      padding: 64px 24px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px;
+
+    & img {
+      display: block;
+      max-width: 100%;
+      width: 72px;
+      height: auto;
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    color: $white;
+    font-family: "Baloo Cyrillic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0 0 40px;
+    color: $white;
+    font-family: "Baloo Cyrillic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include mobilesm {
+      font-size: 15px;
+      line-height: 140%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 218px;
+    padding: 11px 23px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 2px solid $white;
+    border-radius: 50px;
+    transition: $baseTransition;
+
+    
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px;
+    }
+
+    &_channel {
+      color: #334aab;
+      background-color: $white;
+
+      &:hover {
+        background-color: rgba($color: $white, $alpha: 0.8);
+      }
+
+      &::after {
+        background-image: url(../assets/arrow-right.svg);
+      }
+    }
+
+    &_chat {
+      color: $white;
+      border-color: rgba($color: $white, $alpha: 0);
+
+      &:hover {
+        border-color: rgba($color: $white, $alpha: 1);
+      }
+
+      &::after {
+        background-image: url(../assets/arrow-up-right.svg);
+      }
+    }
+  }
+}
