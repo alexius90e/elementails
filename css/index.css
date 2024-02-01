@@ -1258,3 +1258,156 @@ h6 {
 .contacts__link_chat::after {
   background-image: url(../assets/arrow-up-right.svg);
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(69, 86, 160, 0.42) 0%, rgba(69, 86, 160, 0.42) 100%);
+  backdrop-filter: blur(62px);
+}
+.modal.active {
+  display: flex;
+}
+.modal::before, .modal:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.modal::before {
+  top: 173px;
+  left: 0;
+  width: 488px;
+  height: 187px;
+  background: url(../assets/foxes/air.png) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1248px) {
+  .modal::before {
+    top: 103px;
+    width: 357px;
+    height: 137px;
+  }
+}
+@media (max-width: 464px) {
+  .modal::before {
+    top: 15px;
+    width: 193px;
+    height: 70px;
+  }
+}
+.modal:after {
+  right: 0;
+  bottom: 60px;
+  width: 384px;
+  height: 325px;
+  background: url(../assets/foxes/water.png) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1248px) {
+  .modal:after {
+    width: 276px;
+    height: 233px;
+  }
+}
+@media (max-width: 464px) {
+  .modal:after {
+    bottom: 15px;
+    width: 127px;
+    height: 107px;
+  }
+}
+.modal__content {
+  position: relative;
+  z-index: 10;
+}
+
+.modal-stage__body {
+  display: flex;
+  flex-direction: column;
+  gap: 216px;
+  max-width: calc(100vw - 48px);
+  min-height: 490px;
+  width: 344px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../assets/popup-bg.jpg);
+  background-position: top -2px center;
+  background-repeat: no-repeat;
+  background-color: #232e52;
+}
+.modal-stage__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.modal-stage__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-stage__description {
+  margin: 0;
+  color: #9b95bf;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.modal-stage__message {
+  display: flex;
+  gap: 11px;
+  padding: 12px;
+  color: #09d874;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-shadow: 0px 0px 8px rgba(9, 216, 116, 0.64);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: #232e52;
+}
+.modal-stage__message::before {
+  content: "";
+  flex: 0 0 auto;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../assets/green-star.svg) center no-repeat;
+  background-size: 20px;
+  filter: drop-shadow(0px 0px 8px rgba(9, 216, 116, 0.64));
+}
+.modal-stage__button {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #ffffff;
+  font-family: "Baloo Cyrillic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  border-radius: 20px;
+  background-color: #0597f2;
+  transition: all ease-in-out 0.15s;
+  cursor: pointer;
+}
+.modal-stage__button:hover {
+  background-color: #19a7f9;
+}
+.modal-stage__button:active {
+  background-color: #028cd1;
+}

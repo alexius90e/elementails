@@ -1,0 +1,71 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(69, 86, 160, 0.42) 0%, rgba(69, 86, 160, 0.42) 100%);
+  backdrop-filter: blur(62px);
+
+  &.active {
+    display: flex;
+  }
+
+  &::before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::before {
+    top: 173px;
+    left: 0;
+    width: 488px;
+    height: 187px;
+    background: url(../assets/foxes/air.png) center no-repeat;
+    background-size: cover;
+
+    @include desktop {
+      top: 103px;
+      width: 357px;
+      height: 137px;
+    }
+
+    @include mobilesm {
+      top: 15px;
+      width: 193px;
+      height: 70px;
+    }
+  }
+
+  &:after {
+    right: 0;
+    bottom: 60px;
+    width: 384px;
+    height: 325px;
+    background: url(../assets/foxes/water.png) center no-repeat;
+    background-size: cover;
+
+    @include desktop {
+      width: 276px;
+      height: 233px;
+    }
+
+    @include mobilesm {
+      bottom: 15px;
+      width: 127px;
+      height: 107px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+}
